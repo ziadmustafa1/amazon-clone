@@ -1,0 +1,48 @@
+.home {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+  overflow: hidden;
+}
+.home-row {
+    z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.home-image {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+/* تعديل خصائص CSS بناءً على حجم الشاشة */
+
+/* تطبيق التعديلات على شاشات الحاسوب الكبيرة */
+@media screen and (min-width: 1200px) {
+  /* أضف الخصائص هنا */
+  .home-row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+ 
+}
+
+/* تطبيق التعديلات على شاشات الحواسيب المتوسطة */
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  /* أضف الخصائص هنا */
+ 
+}
+
+/* تطبيق التعديلات على شاشات الهواتف */
+@media screen and (max-width: 767px) {
+  /* أضف الخصائص هنا */
+  .m {
+    margin-top: 7rem;
+  }
+
+}
